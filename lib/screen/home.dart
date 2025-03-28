@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,10 +26,13 @@ class HomeScreen extends StatelessWidget {
             );
           }),
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.abc), label: "hello"),
-        BottomNavigationBarItem(icon: Icon(Icons.abc), label: "Hello")
+        BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chats"),
+        BottomNavigationBarItem(icon: Icon(Icons.update), label: "Updates"),
+        BottomNavigationBarItem(icon: Icon(Icons.group), label: "Groups"),
       ]),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
         onPressed: () {},
         child: Icon(Icons.add),
       ),
